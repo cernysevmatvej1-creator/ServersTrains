@@ -6,7 +6,7 @@ WORKDIR /src
 COPY TraniServer/TraniServer.csproj TraniServer/
 RUN dotnet restore "TraniServer/TraniServer.csproj"
 
-# Копируем все остальные файлы
+# Копируем все остальные файлыDSASD
 COPY TraniServer/. TraniServer/
 WORKDIR /src/TraniServer
 RUN dotnet publish -c Release -o /app/publish
