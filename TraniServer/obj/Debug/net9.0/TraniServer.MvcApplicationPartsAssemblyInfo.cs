@@ -11,13 +11,7 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("TraniServer")]
-[assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
-[assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3abaed7efd547e917db34ebf3103f1c34f48c22f")]
-[assembly: System.Reflection.AssemblyProductAttribute("TraniServer")]
-[assembly: System.Reflection.AssemblyTitleAttribute("TraniServer")]
-[assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
+[assembly: Microsoft.AspNetCore.Mvc.ApplicationParts.ApplicationPartAttribute("Microsoft.AspNetCore.OpenApi")]
 
 // Создано классом WriteCodeFragment MSBuild.
 
