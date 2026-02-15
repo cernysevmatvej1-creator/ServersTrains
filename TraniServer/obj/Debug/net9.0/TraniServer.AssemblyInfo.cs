@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TraniServer")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b0df2aa46e18ebdc6a0597193f35bb78585ece5b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0f1a36155471e8d964eafc2878625e01b063f67d")]
 [assembly: System.Reflection.AssemblyProductAttribute("TraniServer")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TraniServer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

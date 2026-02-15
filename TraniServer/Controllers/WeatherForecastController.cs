@@ -10,7 +10,11 @@ namespace TraneServer.Controllers
     {
         private readonly IConfiguration _config;
         FirebaseAuthLink _authLink;
-   [HttpPost("auth-anonim")] 
+        public TraneServerController(IConfiguration config)
+        {
+            _config = config;
+        }
+        [HttpPost("auth-anonim")] 
         public async Task<IActionResult> SignAuthAnonim()
         {
             try
@@ -42,9 +46,15 @@ namespace TraneServer.Controllers
 
                 if (authin.RefreshToken != null && authin.UserId != null)
                 {
-
+                    if(_config == null)
+                    {
+                        return BadRequest(new { success = false, error = "КОНФИГ НУЛ" });
+                    }
                     string firebaseApiKey = _config["FirebaseApiKey"];
-
+                    if (firebaseApiKey == null)
+                    {
+                        return BadRequest(new { success = false, error = "АПИ КЛЮЧ НУЛ" });
+                    }
                     // ÈÑÏÎËÜÇÓÅÌ åãî
                     var authProvider = new FirebaseAuthProvider(new FirebaseConfig(firebaseApiKey));
                     _authLink = await authProvider.RefreshAuthAsync(auth);
